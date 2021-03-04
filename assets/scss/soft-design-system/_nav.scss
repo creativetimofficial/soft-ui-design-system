@@ -1,0 +1,34 @@
+.nav {
+  &.nav-pills {
+    background: $nav-pills-background;
+    border-radius: $nav-pills-border-radius;
+    position: relative;
+
+    &.nav-pills-vertical {
+      border-radius: $nav-pills-vertical-radius;
+
+      .nav-link {
+        &.active {
+          border-radius: $nav-pills-vertical-link-radius;
+        }
+      }
+    }
+
+    .nav-link {
+      z-index: 3;
+      color: $dark;
+      border-radius: $nav-pills-link-border-radius;
+      background-color: inherit;
+
+      &.active {
+        animation: $nav-pills-link-active-animation;
+        box-shadow: $nav-pills-link-box-shadow;
+        background-color: $white !important;
+      }
+
+      &:hover:not(.active) {
+        color: $dark;
+      }
+    }
+  }
+}

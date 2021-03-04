@@ -1,0 +1,121 @@
+.navbar {
+  box-shadow: $navbar-box-shadow;
+
+  .navbar-brand {
+    color: $dark;
+    @include font-size($font-size-sm);
+  }
+  .nav-link {
+    color: $dark;
+    padding: $navbar-nav-link-padding;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-sm;
+  }
+
+  &.navbar-absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &.navbar-transparent {
+    .nav-link {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, .75);
+      }
+    }
+
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        .navbar-toggler-bar {
+          background: $white;
+        }
+      }
+    }
+
+    .navbar-collapse{
+      border-radius: $border-radius-xl;
+    }
+  }
+
+  &.navbar-dark {
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing
+    {
+      .dropdown-header.text-dark{
+        color: $white !important;
+      }
+    }
+  }
+}
+.navbar-light {
+  background-color: $white !important;
+  .navbar-toggler{
+    border: none;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
+
+.navbar-toggler {
+  .navbar-toggler-icon {
+    background-image: none;
+
+    .navbar-toggler-bar {
+      display: $navbar-toggler-bar-display;
+      position: $navbar-toggler-bar-position;
+      width: $navbar-toggler-bar-width;
+      height: $navbar-toggler-bar-height;
+      border-radius: $navbar-toggler-bar-radius;
+      background: $gray-600;
+      transition: $navbar-toggler-bar-transition;
+      margin: 0 auto;
+
+      &.bar2,
+      &.bar3 {
+        margin-top: $navbar-toggler-bar-margin-top;
+      }
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .navbar-toggler-bar {
+      &.bar1 {
+        transform: $navbar-toggler-bar-1-transform;
+        transform-origin: $navbar-toggler-bar-1-transform-origin;
+        margin-top: $navbar-toggler-bar-1-margin-top;
+      }
+
+      &.bar2 {
+        opacity: $navbar-toggler-bar-2-opacity;
+      }
+
+      &.bar3 {
+        transform: $navbar-toggler-bar-3-transform;
+        transform-origin: $navbar-toggler-bar-3-transform-origin;
+        margin-top: $navbar-toggler-bar-3-margin-top;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar{
+    &.navbar-transparent{
+      .navbar-collapse.collapsing{
+        background: $white;
+      }
+
+      .navbar-collapse.show{
+        background: $white;
+        .nav-link{
+          color: $dark;
+        }
+      }
+    }
+  }
+}
