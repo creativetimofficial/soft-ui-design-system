@@ -1,1 +1,0 @@
-# soft-ui-design-system
