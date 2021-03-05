@@ -1,6 +1,6 @@
 # [Soft UI Design System](http://demos.creative-tim.com/soft-ui-design-system/presentation.html?ref=readme-suds)
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/soft-ui-design-system.svg?maxAge=2592000)](https://github.com/creativetimofficial/soft-ui-design-system/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/soft-ui-design-system.svg?maxAge=2592000)](https://github.com/creativetimofficial/soft-ui-design-system/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.1-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/soft-ui-design-system.svg?maxAge=2592000)](https://github.com/creativetimofficial/soft-ui-design-system/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/soft-ui-design-system.svg?maxAge=2592000)](https://github.com/creativetimofficial/soft-ui-design-system/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/opt_sds_free_thumbnail.jpg)
 

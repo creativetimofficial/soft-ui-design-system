@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Soft UI Design System - v1.0.0
+* Soft UI Design System - v1.0.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/black-dashboard
