@@ -85,7 +85,17 @@ $width-30:                    30% !default;
 $width-35:                    35% !default;
 $width-40:                    40% !default;
 $width-45:                    45% !default;
-
+$width-50:                    50% !default;
+$width-55:                    55% !default;
+$width-60:                    60% !default;
+$width-65:                    65% !default;
+$width-70:                    70% !default;
+$width-75:                    75% !default;
+$width-80:                    80% !default;
+$width-85:                    85% !default;
+$width-90:                    90% !default;
+$width-95:                    95% !default;
+$width-100:                   100% !default;
 
 // extra max width values variables - CT
 $max-width-100:                     100px !default;
@@ -136,6 +146,27 @@ $top-2:                             2rem !default;
 $top-3:                             3rem !default;
 $top-4:                             4rem !default;
 $top-5:                             5rem !default;
+
+// bottom values - CT
+$bottom-1:                             1rem !default;
+$bottom-2:                             2rem !default;
+$bottom-3:                             3rem !default;
+$bottom-4:                             4rem !default;
+$bottom-5:                             5rem !default;
+
+// left values - CT
+$left-1:                             1rem !default;
+$left-2:                             2rem !default;
+$left-3:                             3rem !default;
+$left-4:                             4rem !default;
+$left-5:                             5rem !default;
+
+// right values - CT
+$right-1:                             1rem !default;
+$right-2:                             2rem !default;
+$right-3:                             3rem !default;
+$right-4:                             4rem !default;
+$right-5:                             5rem !default;
 
 // Extra Padding values Map
 $paddings: (
@@ -205,7 +236,19 @@ $width: (
   "25": $width-25,
   "30": $width-30,
   "35": $width-35,
-  "45": $width-45
+  "40": $width-40,
+  "45": $width-45,
+  "50": $width-50,
+  "55": $width-55,
+  "60": $width-60,
+  "65": $width-65,
+  "70": $width-70,
+  "75": $width-75,
+  "80": $width-80,
+  "85": $width-85,
+  "90": $width-90,
+  "95": $width-95,
+  "100": $width-100,
 ) !default;
 
 $max-width: (
@@ -258,11 +301,39 @@ $letterSpacing: (
 
 
 $top: (
+  "0": 0,
   "1": $top-1,
   "2": $top-2,
   "3": $top-3,
   "4": $top-4,
   "5": $top-5
+) !default;
+
+$right: (
+  "0": 0,
+  "1": $right-1,
+  "2": $right-2,
+  "3": $right-3,
+  "4": $right-4,
+  "5": $right-5
+) !default;
+
+$left: (
+  "0": 0,
+  "1": $left-1,
+  "2": $left-2,
+  "3": $left-3,
+  "4": $left-4,
+  "5": $left-5
+) !default;
+
+$bottom: (
+  "0": 0,
+  "1": $bottom-1,
+  "2": $bottom-2,
+  "3": $bottom-3,
+  "4": $bottom-4,
+  "5": $bottom-5
 ) !default;
 
 // blur effect variables
@@ -272,3 +343,8 @@ $blur-backdrop-filter:          saturate(200%) blur(30px) !default;
 $blur-backdrop-filter-less:     saturate(20%) blur(30px) !default;
 
 $shadow-blur-box-shadow:        inset 0 0px 1px 1px rgba(254, 254, 254, .9), 0 20px 27px 0 rgba(0, 0, 0, .05) !default;
+
+// sidebar variables
+
+$sidebar-width: 80px !default;
+$sidebar-transition: 1s ease !default;

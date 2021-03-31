@@ -10,6 +10,7 @@ $icon-striped-icon-ml:              -24% !default;
 
 $icon-shape-icon-opacity:           .8 !default;
 $info-icon-top:                     11px !default;
+$info-icon-top-xxs:                 -4px !default;
 $info-icon-top-xs:                  -4px !default;
 $info-icon-top-sm:                  2px !default;
 $info-icon-top-md:                  22% !default;
@@ -17,6 +18,8 @@ $info-icon-top-lg:                  31% !default;
 $info-icon-top-xl:                  37% !default;
 $info-icon-position:                relative !default;
 
+$icon-xxs-width:                    20px !default;
+$icon-xxs-height:                   $icon-xxs-width !default;
 $icon-xs-width:                     24px !default;
 $icon-xs-height:                    $icon-xs-width !default;
 $icon-sm-width:                     32px !default;

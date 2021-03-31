@@ -20,7 +20,10 @@
 
   &.navbar-transparent {
     .nav-link {
-      color: $white;
+      &, i {
+        color: $white;
+      }
+
 
       &:hover,
       &:focus {
@@ -47,6 +50,20 @@
     {
       .dropdown-header.text-dark{
         color: $white !important;
+      }
+    }
+  }
+  .sidenav-toggler-inner{
+    width: $sidenav-toggler-width;
+    .sidenav-toggler-line{
+      transition: $sidenav-toggler-line-transition;
+      background: $body-color;
+      border-radius: $border-radius-xs;
+      position: relative;
+      display: block;
+      height: $sidenav-toggler-line-height;
+      &:not(:last-child){
+        margin-bottom: $sidenav-toggler-line-margin-bottom;
       }
     }
   }
@@ -104,16 +121,50 @@
 }
 
 @include media-breakpoint-down(lg) {
-  .navbar{
-    &.navbar-transparent{
-      .navbar-collapse.collapsing{
+  .navbar {
+    &.navbar-transparent {
+      .navbar-collapse {
+        padding-top: $spacer / 2;
+        padding-bottom: $spacer / 2;
+      }
+
+      .navbar-collapse.collapsing {
         background: $white;
       }
 
-      .navbar-collapse.show{
+      .navbar-collapse.show {
         background: $white;
-        .nav-link{
+        .nav-link,
+        i {
           color: $dark;
+        }
+      }
+    }
+
+    .g-sidenav-show & {
+      &:not(.sidenav).navbar-main {
+        .navbar-collapse {
+          display: flex !important;
+          flex-basis: auto;
+        }
+
+        .navbar-nav {
+          flex-direction: row;
+        }
+      }
+
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .navbar{
+    .g-sidenav-show.g-sidenav-pinned &{
+      .sidenav-toggler-inner{
+        .sidenav-toggler-line:first-child,
+        .sidenav-toggler-line:last-child {
+            width: $sidenav-toggler-line-active-width;
+            transform: $sidenav-toggler-line-transform;
         }
       }
     }

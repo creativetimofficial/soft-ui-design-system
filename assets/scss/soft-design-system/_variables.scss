@@ -483,8 +483,8 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-line-height:              1.2 !default;
-$h2-line-height:              1.25 !default;
+$h1-line-height:              1.25 !default;
+$h2-line-height:              1.3 !default;
 $h3-line-height:              1.375 !default;
 $h4-line-height:              1.375 !default;
 $h5-line-height:              1.375 !default;
@@ -588,7 +588,7 @@ $a-letter-spacing:            -0.025rem !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 $table-head-spacer-y:         .75rem !default;
-$table-head-spacer-x:         1rem !default;
+$table-head-spacer-x:         1.5rem !default;
 $table-head-font-size:        .65rem !default;
 $table-head-font-weight:      $font-weight-bold !default;
 $table-head-text-transform:   capitalize !default;
@@ -730,7 +730,9 @@ $btn-border-radius-sm:        .5rem !default;
 $btn-border-rounded:          1.875rem !default;
 
 $btn-icon-transition:         all .2s cubic-bezier(.34,1.61,.7,1.3) !default;
-$btn-icon-transform:          translateX(5px) !default;
+$btn-icon-transform-right:          translateX(5px) !default;
+$btn-icon-transform-left:          translateX(-5px) !default;
+
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius-md !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
@@ -738,9 +740,15 @@ $btn-border-radius-lg:        $border-radius-lg !default;
 
 $btn-transition:              all .15s ease-in !default;
 
+$btn-just-icon-padding-x-sm:     .3rem !default;
+$btn-just-icon-padding-y-sm:     .3rem !default;
+$btn-just-icon-padding-x:         .7rem !default;
+$btn-just-icon-padding-y:         .7rem !default;
+$btn-just-icon-padding-x-lg:         1rem !default;
+$btn-just-icon-padding-y-lg:         1rem !default;
 $btn-just-icon-width:         2.375rem !default;
 $btn-just-icon-height:        $btn-just-icon-width !default;
-$btn-just-icon-width-sm:      2.1875rem !default;
+$btn-just-icon-width-sm:      1.5875rem !default;
 $btn-just-icon-height-sm:     $btn-just-icon-width-sm !default;
 $btn-just-icon-sm-font-size:  .5rem !default;
 $btn-just-icon-width-lg:      3.25rem !default;
@@ -882,6 +890,7 @@ $form-switch-border-radius:       $form-switch-width !default;
 $form-switch-translate-x-start:   1px !default;
 $form-switch-translate-x-end:     21px !default;
 $form-switch-round-box-shadow:    $box-shadow !default;
+$form-switch-transition:          $form-check-transition !default;
 
 $form-switch-focus-color:         $form-switch-color !default;
 $form-switch-focus-bg-image:      $form-switch-bg-image !default;
@@ -1107,6 +1116,13 @@ $navbar-light-brand-hover-color:    $navbar-light-active-color !default;
 $navbar-dark-brand-color:           $navbar-dark-active-color !default;
 $navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
 
+// Sidenav toggler
+$sidenav-toggler-width:              18px !default;
+$sidenav-toggler-line-transition:    all .15s ease !default;
+$sidenav-toggler-line-height:        2px !default;
+$sidenav-toggler-line-margin-bottom: 3px !default;
+$sidenav-toggler-line-active-width:  13px !default;
+$sidenav-toggler-line-transform:     translateX(5px) !default;
 
 // Dropdowns
 //
@@ -1407,7 +1423,7 @@ $progress-bar-transition:           width .6s ease !default;
 
 // List group
 
-$list-group-color:                  null !default;
+$list-group-color:                  inherit !default;
 $list-group-bg:                     $white !default;
 $list-group-border-color:           rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
@@ -1534,11 +1550,15 @@ $kbd-padding-x:                     .4rem !default;
 $kbd-font-size:                     $code-font-size !default;
 $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;
-
 $pre-color:                         null !default;
 
+// Tilt Animation
 
-// Variables for Info areas
+$tilt-transform-style:              preserve-3d !default;
+$tilt-transform-up-transform:       translateZ(50px) scale(0.7) !default;
+$tilt-transform-up-transition:      all 0.5s !default;
+
+// Variables for Core
 
 @import "variables/animations";
 @import "variables/avatars";
@@ -1551,4 +1571,3 @@ $pre-color:                         null !default;
 @import 'variables/misc';
 @import 'variables/form-switch';
 @import 'variables/pagination';
-@import "variables/choices";
