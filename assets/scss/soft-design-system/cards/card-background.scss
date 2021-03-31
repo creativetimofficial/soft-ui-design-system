@@ -55,53 +55,16 @@
       border-radius: $card-border-radius;
     }
 
-    &.card-background-mask-primary{
-      &:before {
-        background: $card-bg-filter-mask-bg;
-      }
-      &:after {
-        @include gradient-directional($primary-gradient 0%, $primary-gradient-state 100%, $deg: 310deg);
-        opacity: .85;
-      }
-    }
+    @each $name, $val in $theme-gradient-colors {
+      &.card-background-mask-#{$name} {
+        &:before {
+          background: $card-bg-filter-mask-bg;
+        }
 
-    &.card-background-mask-info{
-      &:before {
-        background: $card-bg-filter-mask-bg;
-      }
-      &:after {
-        @include gradient-directional($info-gradient 0%, $info-gradient-state 100%, $deg: 310deg);
-        opacity: .85;
-      }
-    }
-
-    &.card-background-mask-success{
-      &:before {
-        background: $card-bg-filter-mask-bg;
-      }
-      &:after {
-        @include gradient-directional($success-gradient 0%, $success-gradient-state 100%, $deg: 310deg);
-        opacity: .85;
-      }
-    }
-
-    &.card-background-mask-warning{
-      &:before {
-        background: $card-bg-filter-mask-bg;
-      }
-      &:after {
-        @include gradient-directional($warning-gradient 0%, $warning-gradient-state 100%, $deg: 310deg);
-        opacity: .85;
-      }
-    }
-
-    &.card-background-mask-danger{
-      &:before {
-        background: $card-bg-filter-mask-bg;
-      }
-      &:after {
-        @include gradient-directional($danger-gradient 0%, $danger-gradient-state 100%, $deg: 310deg);
-        opacity: .85;
+        &:after {
+          @include gradient-directional(nth($val, 1) 0%, nth($val, -1) 100%, $deg: 310deg);
+          opacity: .85;
+        }
       }
     }
 

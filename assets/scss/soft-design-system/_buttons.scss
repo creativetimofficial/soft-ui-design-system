@@ -19,8 +19,10 @@
   }
 
   @include hover {
-    box-shadow: $btn-hover-box-shadow;
-    transform: $btn-hover-transform;
+    &:not(.btn-icon-only){
+      box-shadow: $btn-hover-box-shadow;
+      transform: $btn-hover-transform;
+    }
   }
 
   &.bg-white {
@@ -46,7 +48,7 @@
   &.btn-icon-only {
     width: $btn-just-icon-width;
     height: $btn-just-icon-height;
-    padding: 0;
+    padding: $btn-just-icon-padding-y $btn-just-icon-padding-x;
   }
 
   // Button Icon Sizes
@@ -55,6 +57,7 @@
     &.btn-icon-only {
       width: $btn-just-icon-width-sm;
       height: $btn-just-icon-height-sm;
+      padding: $btn-just-icon-padding-y-sm $btn-just-icon-padding-x-sm;
     }
 
     i {
@@ -66,6 +69,7 @@
     &.btn-icon-only {
       width: $btn-just-icon-width-lg;
       height: $btn-just-icon-height-lg;
+      padding: $btn-just-icon-padding-y-lg $btn-just-icon-padding-x-lg;
     }
 
     i {
@@ -87,7 +91,19 @@
   &:hover,
   &:focus {
     i {
-      transform: $btn-icon-transform;
+      transform: $btn-icon-transform-right;
+    }
+  }
+}
+
+.icon-move-left{
+  i {
+    transition: $btn-icon-transition;
+  }
+  &:hover,
+  &:focus {
+    i {
+      transform: $btn-icon-transform-left;
     }
   }
 }
@@ -110,7 +126,7 @@
       background-color: $value;
     }
 
-    @if $value != $white {
+    @if $value != $white and $value != $light {
       &.focus,
       &:focus {
         color: $white;
@@ -118,13 +134,22 @@
     }
   }
 
+  // .btn-#{$color},
+  // .btn.bg-gradient-#{$color}{
+  //   &:focus{
+  //     box-shadow: 0 0 0 3px rgba($value,.5);
+  //   }
+  // }
+
   .btn-outline-#{$color} {
     box-shadow: none;
     @include hover {
-      background-color: transparent;
-      opacity: .75;
-      box-shadow: none;
-      color: $value;
+      &:not(.active){
+        background-color: transparent;
+        opacity: .75;
+        box-shadow: none;
+        color: $value;
+      }
     }
   }
 }
@@ -140,6 +165,19 @@
     color: $value;
     @include hover {
       color: $value;
+    }
+  }
+}
+
+// buttons box-shadow
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color},
+  .btn.bg-gradient-#{$color}{
+    //box-shadow: $btn-box-shadow-values rgba($value, .2);
+
+    @include hover {
+      //box-shadow: $btn-box-shadow-hover-values rgba($value, .2);
     }
   }
 }

@@ -24,14 +24,17 @@
 }
 
 .shadow-blur {
-  box-shadow: $shadow-blur-box-shadow;
+  box-shadow: $shadow-blur-box-shadow !important;
+}
+
+.shadow-card {
+  box-shadow: $card-box-shadow !important;
 }
 
 .navbar-blur {
   -webkit-backdrop-filter: $blur-backdrop-filter;
   backdrop-filter: $blur-backdrop-filter;
   background-color: rgba($white, .58) !important;
-  border-bottom: $border-width solid rgba($gray-300, .35);
 }
 
 .blur-section {
@@ -87,6 +90,10 @@ hr.vertical {
   &.dark {
     background-image: $hr-vertical-bg-image-dark;
   }
+
+  &.gray-light {
+    background-image: $hr-horizontal-bg-image-gray-light;
+  }
 }
 
 // Horizontal Line
@@ -98,6 +105,10 @@ hr.horizontal {
   }
   &.dark {
     background-image: $hr-horizontal-bg-image-dark;
+  }
+
+  &.gray-light {
+    background-image: $hr-horizontal-bg-image-gray-light;
   }
 }
 
@@ -252,14 +263,9 @@ hr.horizontal {
   overflow: visible !important;
 }
 
-// Tilt Animation
-.tilt {
-  -webkit-transform-style: $tilt-transform-style;
-  transform-style: $tilt-transform-style;
-
-  .up {
-    -webkit-transform: $tilt-transform-up-transform;
-    transform: $tilt-transform-up-transform;
-    transition: $tilt-transform-up-transition;
+// popover title
+.popover {
+  .popover-header {
+    font-weight: 600;
   }
 }

@@ -4,10 +4,7 @@
   background-position: $icon-shape-bg-position;
   border-radius: $border-radius-lg;
 
-  i,
-  .ni,
-  .fa,
-  .fab {
+  i {
     color: $white;
     opacity: $icon-shape-icon-opacity;
     top: $info-icon-top;
@@ -16,6 +13,16 @@
 
   .ni {
     top: 14px;
+  }
+}
+
+.icon-xxs {
+  width: $icon-xxs-width;
+  height: $icon-xxs-height;
+
+  i {
+    top: $info-icon-top-xxs;
+    font-size: .5rem;
   }
 }
 

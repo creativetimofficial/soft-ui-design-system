@@ -1272,3 +1272,33 @@
     top: $value !important;
   }
 }
+
+// Right values
+@each $name, $value in $top {
+  .right-#{$name} {
+    right: $value !important;
+  }
+}
+
+// Left values
+@each $name, $value in $top {
+  .left-#{$name} {
+    left: $value !important;
+  }
+}
+
+// Bottom values
+@each $name, $value in $top {
+  .bottom-#{$name} {
+    bottom: $value !important;
+  }
+}
+
+// Position dynamic on relative or absolute
+.left-auto {
+  left: auto;
+}
+
+.right-auto {
+  right: auto;
+}
