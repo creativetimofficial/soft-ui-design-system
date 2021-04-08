@@ -771,7 +771,7 @@
 
 @include media-breakpoint-up(sm) {
   @each $name, $value in $margins {
-    .me-sm-n-#{$name} {
+    .me-sm-#{$name} {
       margin-right: $value !important;
     }
   }

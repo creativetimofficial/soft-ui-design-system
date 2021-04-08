@@ -1,6 +1,11 @@
 # Change Log
 
-## [1.0.2] 2021-03-31
+## [1.0.3] 2021-04-08
+### Bugfixing
+- fix the Datepicker issue from Index Page
+- fix the navTabs issue from Index Page
+
+## [1.0.2] 2021-03-04
 ### Improvements & Bugfixing
 - upgrade Bootstrap version to v5.0.0-beta3
 - add responsive headings
