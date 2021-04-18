@@ -4,7 +4,7 @@
 * Soft UI Design System - v1.0.3
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard
+* Product Page: https://www.creative-tim.com/product/soft-ui-design-system
 * Copyright site.year Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard/blob/master/LICENSE.md)
 
