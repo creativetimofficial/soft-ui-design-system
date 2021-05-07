@@ -1,12 +1,11 @@
 /*!
 
 =========================================================
-* Soft UI Design System - v1.0.3
+* Soft UI Design System - v1.0.4
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard
-* Copyright site.year Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard/blob/master/LICENSE.md)
+* Product Page: https://www.creative-tim.com/product/soft-ui-design-system
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 
 * Coded by Creative Tim
 

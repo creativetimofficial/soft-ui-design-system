@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.4] 2021-05-07
+### Updates & Bugfixing
+- upgrade Bootstrap version to v5.0.0
+- bug fixing
+
 ## [1.0.3] 2021-04-08
 ### Bugfixing
 - fix the Datepicker issue from Index Page
