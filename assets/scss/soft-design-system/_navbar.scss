@@ -67,7 +67,17 @@
       }
     }
   }
+  .g-sidenav-show.g-sidenav-pinned &{
+    .sidenav-toggler-inner{
+      .sidenav-toggler-line:first-child,
+      .sidenav-toggler-line:last-child {
+          width: $sidenav-toggler-line-active-width;
+          transform: $sidenav-toggler-line-transform;
+      }
+    }
+  }
 }
+
 .navbar-light {
   background-color: $white !important;
   .navbar-toggler{
@@ -153,20 +163,6 @@
         }
       }
 
-    }
-  }
-}
-
-@include media-breakpoint-down(xl) {
-  .navbar{
-    .g-sidenav-show.g-sidenav-pinned &{
-      .sidenav-toggler-inner{
-        .sidenav-toggler-line:first-child,
-        .sidenav-toggler-line:last-child {
-            width: $sidenav-toggler-line-active-width;
-            transform: $sidenav-toggler-line-transform;
-        }
-      }
     }
   }
 }
