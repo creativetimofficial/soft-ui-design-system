@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Soft UI Design System - v1.0.3
+* Soft UI Design System - v1.0.5
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-design-system
@@ -18,31 +18,43 @@
 
 // {{ site.product.name }} components
 
+// Variables
+@import "variables/navbar-vertical";
+@import "variables/social-buttons";
+@import "variables/breadcrumb";
+
 // Mixin
 @import "mixins/mixins";
 
 // Core Components - extra styling
 @import "alert";
-@import "avatars/avatar";
+@import "avatars";
+@import "badge";
 @import "buttons";
+@import "breadcrumbs";
 @import "cards";
 @import "dropdown";
-@import "tilt";
 @import "dropup";
+@import "header";
+@import "fixed-plugin";
 @import "forms/forms";
 @import "footer";
 @import "gradients";
-@import "header";
 @import "info-areas";
 @import "misc";
 @import "navbar";
+@import "navbar-vertical";
 @import "nav";
 @import "pagination";
 @import "popovers";
 @import "progress";
-@import "typography";
+@import "rtl";
+@import "social-buttons";
+@import "tables";
+@import "timeline";
+@import "tilt";
 @import "tooltips";
-@import "utilities";
+@import "typography";
 
 // Plugins
-@import "vendor/plugins";
+@import "plugins/free/plugins";
