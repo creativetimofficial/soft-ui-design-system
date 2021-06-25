@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.5] 2021-06-25
+### Update
+- upgrade Bootstrap version to v5.0.2
+- change headings color from '#252F40' to '#344767'
+
 ## [1.0.4] 2021-05-07
 ### Updates & Bugfixing
 - upgrade Bootstrap version to v5.0.0

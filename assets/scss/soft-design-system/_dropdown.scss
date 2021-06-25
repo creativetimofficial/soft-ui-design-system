@@ -1,6 +1,8 @@
 @include media-breakpoint-up(lg) {
   .dropdown,
-  .dropup {
+  .dropup,
+  .dropstart,
+  .dropend {
     .dropdown-menu {
       box-shadow: $dropdown-box-shadow;
       transition: $dropdown-transition;
@@ -176,6 +178,14 @@
       top: 0;
       z-index: -1;
       transition: left .35s ease;
+    }
+    &.dropdown-menu-end{
+      right: 0 !important;
+      left: auto !important;
+      &:before{
+        right: $dropdown-animation-arrow-left-position;
+        left: auto;
+      }
     }
   }
 
