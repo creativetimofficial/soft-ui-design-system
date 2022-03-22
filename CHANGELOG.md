@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.6] 2022-03-22
+### Updates & Bugfixing
+- upgrade Bootstrap version to v5.1.3
+- fix running 'npm install' issue
+- fix SCSS compiling issues
+- fix W3 errors
+- solve input-group-text issue
+
 ## [1.0.5] 2021-06-25
 ### Update
 - upgrade Bootstrap version to v5.0.2
