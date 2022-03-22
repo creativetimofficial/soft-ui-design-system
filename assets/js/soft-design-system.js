@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Soft UI Design System - v1.0.5
+* Soft UI Design System - v1.0.6
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-design-system
@@ -194,6 +194,32 @@ function copyCode(el) {
 }
 
 // End copy code function
+
+// Input focus function
+var getParent = function(elem, selector) {
+  for (; elem && elem !== document; elem = elem.parentNode) {
+    if (elem.matches(selector)) return elem;
+  }
+  return null;
+};
+document.addEventListener('click', function(event) {
+  var parent = getParent(event.target, '.input-group');
+  if (event.target.classList.contains('form-control')) {
+    var focus = document.querySelectorAll('.input-group.focused');
+    for (var i = 0; i < focus.length; i++) {
+      focus[i].classList.remove('focused');
+    }
+    parent.classList.add('focused');
+  }
+  var focus = document.querySelectorAll('.input-group.focused');
+  if (focus && event.target != parent && event.target.parentNode != parent) {
+    for (var i = 0; i < focus.length; i++) {
+      focus[i].classList.remove('focused');
+    }
+
+  }
+}, false);
+
 
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
