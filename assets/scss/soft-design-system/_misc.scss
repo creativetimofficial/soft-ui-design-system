@@ -74,6 +74,12 @@
   }
 }
 
+// hr lines
+hr {
+  border-top: none !important;
+  height: 1px;
+}
+
 // Vertical Line
 hr.vertical {
   position: absolute;
@@ -280,6 +286,20 @@ hr.horizontal {
   background-size: cover;
 }
 
+// Overflow directional
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 // Mask Class
 .mask {
   position: $mask-position;
@@ -318,4 +338,10 @@ hr.horizontal {
       position: absolute;
     }
   }
+}
+
+// border inside iframe sections
+
+html {
+  border: none !important;
 }

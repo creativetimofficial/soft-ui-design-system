@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Soft UI Design System - v1.0.7
+* Soft UI Design System - v1.0.8
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-design-system
