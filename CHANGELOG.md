@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.9] 2022-07-15
+### Update
+- add button to the online builder in navbar
+
 ## [1.0.8] 2022-06-03
 ### Updates and Improvements
 - update Bootstrap to v5.2.0-beta1

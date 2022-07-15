@@ -20095,7 +20095,7 @@ fieldset:disabled .btn {
 /*!
 
 =========================================================
-* Soft UI Design System - v1.0.8
+* Soft UI Design System - v1.0.9
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-design-system
@@ -21507,6 +21507,7 @@ fieldset:disabled .btn {
 
 .input-group-text {
   z-index: 9999;
+  height: 100%;
   border-right: 0;
   padding-left: 10px;
   padding-right: 10px;
