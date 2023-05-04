@@ -16,22 +16,28 @@ During the development of this design system, we have used many existing resourc
 - [CountUp](https://inorganik.github.io/countUp.js/) - Dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way
 - [Rellax](https://dixonandmoe.com/rellax/) - Lightweight, vanilla javascript parallax library
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) - A lightweight script to animate scrolling to anchor links
+- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Soft UI Design System. You can use it to gain insights into your sources of traffic.
 
 Let us know your thoughts below. And good luck with development!
 
 ## Table of Contents
 
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
+- [Soft UI Design System  ](#soft-ui-design-system--)
+      - [Special thanks](#special-thanks)
+  - [Table of Contents](#table-of-contents)
+  - [Versions](#versions)
+  - [Demo](#demo)
+  - [Quick start](#quick-start)
+  - [Terminal Commands](#terminal-commands)
+  - [Documentation](#documentation)
+    - [What's included](#whats-included)
+  - [Browser Support](#browser-support)
+  - [Resources](#resources)
+  - [Reporting Issues](#reporting-issues)
+  - [Technical Support or Questions](#technical-support-or-questions)
+  - [Licensing](#licensing)
+  - [Useful Links](#useful-links)
+        - [Social Media](#social-media)
 
 ## Versions
 
@@ -105,6 +111,7 @@ At present, we officially aim to support the last two versions of the following 
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-suds)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-suds)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/soft-ui-design-system/issues)
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the Soft UI Design System. Here are some advices for our users that want to report an issue:
@@ -119,7 +126,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-suds)
+- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-suds)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-suds)
 
 ## Useful Links
@@ -140,6 +147,6 @@ Facebook: <https://www.facebook.com/CreativeTim>
 
 Dribbble: <https://dribbble.com/creativetim>
 
-Google+: <https://plus.google.com/+CreativetimPage>
+TikTok: <https://tiktok.com/@creative.tim>
 
 Instagram: <https://instagram.com/creativetimofficial>
