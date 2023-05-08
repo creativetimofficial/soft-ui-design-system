@@ -345,3 +345,8 @@ hr.horizontal {
 html {
   border: none !important;
 }
+
+.container,
+.container-fluid {
+  @include make-container();
+}
