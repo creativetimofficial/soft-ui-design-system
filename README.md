@@ -28,6 +28,7 @@ Let us know your thoughts below. And good luck with development!
   - [Versions](#versions)
   - [Demo](#demo)
   - [Quick start](#quick-start)
+  - [Deploy](#deploy)
   - [Terminal Commands](#terminal-commands)
   - [Documentation](#documentation)
     - [What's included](#whats-included)
@@ -62,6 +63,12 @@ Let us know your thoughts below. And good luck with development!
 Quick start options:
 
 - Download from [Creative Tim](https://www.creative-tim.com/product/soft-ui-design-system?ref=readme-suds).
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/soft-ui-design-system&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Terminal Commands
 
