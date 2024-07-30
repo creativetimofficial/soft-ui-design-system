@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url("Vazir-Thin-FD.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("dana-light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Regular-FD.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Regular-FD.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Medium-FD.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Bold-FD.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Bold-FD.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Black-FD.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url("Vazir-Black-FD.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
