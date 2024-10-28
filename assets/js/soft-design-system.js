@@ -1,16 +1,19 @@
-// =========================================================
-// Soft UI Design System - v1.0.9
-// =========================================================
+/*!
 
-// Product Page: https://www.creative-tim.com/product/soft-ui-design-system
-// Copyright 2023 Creative Tim (https://www.creative-tim.com)
-// Licensed under MIT (https://github.com/creativetimofficial/soft-ui-dashboard/blob/main/LICENSE)
+=========================================================
+* Soft UI Design 3 System - v1.1.0
+=========================================================
 
-// Coded by www.creative-tim.com
+* Product Page: https://www.creative-tim.com/product/soft-ui-design-system
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 
-// =========================================================
+* Coded by Creative Tim
 
-// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
 
 // initialization of Popovers
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -192,31 +195,54 @@ function copyCode(el) {
 
 // End copy code function
 
-// Input focus function
-var getParent = function(elem, selector) {
-  for (; elem && elem !== document; elem = elem.parentNode) {
-    if (elem.matches(selector)) return elem;
+
+window.onload = function() {
+  // Material Design Input function
+  var inputs = document.querySelectorAll('input');
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('focus', function(e) {
+      this.parentElement.classList.add('is-focused');
+    }, false);
+
+    inputs[i].onkeyup = function(e) {
+      if (this.value != "") {
+        this.parentElement.classList.add('is-filled');
+      } else {
+        this.parentElement.classList.remove('is-filled');
+      }
+    };
+
+    inputs[i].addEventListener('focusout', function(e) {
+      if (this.value != "") {
+        this.parentElement.classList.add('is-filled');
+      }
+      this.parentElement.classList.remove('is-focused');
+    }, false);
   }
-  return null;
+
+  // Ripple Effect
+  var ripples = document.querySelectorAll('.btn');
+
+  for (var i = 0; i < ripples.length; i++) {
+    ripples[i].addEventListener('click', function(e) {
+      var targetEl = e.target;
+      var rippleDiv = targetEl.querySelector('.ripple');
+
+      rippleDiv = document.createElement('span');
+      rippleDiv.classList.add('ripple');
+      rippleDiv.style.width = rippleDiv.style.height = Math.max(targetEl.offsetWidth, targetEl.offsetHeight) + 'px';
+      targetEl.appendChild(rippleDiv);
+
+      rippleDiv.style.left = (e.offsetX - rippleDiv.offsetWidth / 2) + 'px';
+      rippleDiv.style.top = (e.offsetY - rippleDiv.offsetHeight / 2) + 'px';
+      rippleDiv.classList.add('ripple');
+      setTimeout(function() {
+        rippleDiv.parentElement.removeChild(rippleDiv);
+      }, 600);
+    }, false);
+  }
 };
-document.addEventListener('click', function(event) {
-  var parent = getParent(event.target, '.input-group');
-  if (event.target.classList.contains('form-control')) {
-    var focus = document.querySelectorAll('.input-group.focused');
-    for (var i = 0; i < focus.length; i++) {
-      focus[i].classList.remove('focused');
-    }
-    parent.classList.add('focused');
-  }
-  var focus = document.querySelectorAll('.input-group.focused');
-  if (focus && event.target != parent && event.target.parentNode != parent) {
-    for (var i = 0; i < focus.length; i++) {
-      focus[i].classList.remove('focused');
-    }
-
-  }
-}, false);
-
 
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
